@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   tagline: string;
-  status: 'Done' | 'Ongoing' | 'Freelance' | 'Epic';
+  status: 'Done' | 'Ongoing' | 'Freelance';
   summary: string;
   features: string[];
   tech: string[];
@@ -17,7 +17,6 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  proficiency: 'Expert' | 'Advanced' | 'Familiar';
   category: 'Frontend' | 'Backend' | 'Mobile' | 'DevOps & Tooling' | 'AI/ML';
-  logoSvg?: string;
+  logoPath?: string;
 }

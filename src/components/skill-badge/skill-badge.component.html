@@ -1,7 +1,7 @@
-<div class="glassmorphism rounded-lg p-4 flex flex-col items-center justify-center gap-3 aspect-square transition-all duration-300 transform hover:-translate-y-1 glow-on-hover border" [class]="getProficiencyColor(skill().proficiency)">
-  @if (skill().logoSvg) {
-    <svg class="w-10 h-10" role="img" viewBox="0 0 24 24" fill="currentColor" [class]="getLogoColor(skill().proficiency)">
-      <path [attr.d]="skill().logoSvg" />
+<div class="glassmorphism rounded-lg p-4 flex flex-col items-center justify-center gap-3 aspect-square transition-all duration-300 transform hover:-translate-y-1 glow-on-hover border">
+  @if (skill().logoPath) {
+    <svg class="w-10 h-10" role="img" viewBox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" [attr.d]="skill().logoPath" />
     </svg>
   } @else {
     <div class="w-10 h-10 flex items-center justify-center text-gray-500">

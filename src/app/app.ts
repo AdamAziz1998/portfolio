@@ -1,15 +1,15 @@
 import {Component, inject, signal} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import {Project, Skill} from '../models/project.model';
 import {DataService} from '../services/data.service';
 import {HeaderComponent} from '../components/header/header.component';
 import {SkillBadgeComponent} from '../components/skill-badge/skill-badge.component';
 import {ProjectCardComponent} from '../components/project-card/project-card.component';
 import {ProjectModalComponent} from '../components/project-modal/project-modal.component';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, SkillBadgeComponent, ProjectCardComponent, ProjectModalComponent],
+  imports: [HeaderComponent, SkillBadgeComponent, ProjectCardComponent, ProjectModalComponent, DatePipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -28,6 +28,8 @@ export class App {
   aiSkills = signal<Skill[]>(this.skills().filter(s => s.category === 'AI/ML'));
 
   selectedProject = signal<Project | null>(null);
+
+  today = new Date();
 
   openProjectModal(project: Project) {
     this.selectedProject.set(project);
