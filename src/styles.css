@@ -32,11 +32,20 @@
 
 /* Layer 1: Smallest, slowest stars */
 .stars-1 {
-  background-image: radial-gradient(1px 1px at 50px 100px, #fff, transparent),
-                    radial-gradient(1px 1px at 150px 250px, #fff, transparent),
-                    radial-gradient(1px 1px at 300px 50px, #fff, transparent),
-                    radial-gradient(1.5px 1.5px at 400px 300px, #fff, transparent),
-                    radial-gradient(1px 1px at 500px 150px, #fff, transparent);
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 100px 50px, #fff, transparent),
+    radial-gradient(1px 1px at 160px 220px, #fff, transparent),
+    radial-gradient(1px 1px at 220px 100px, #fff, transparent),
+    radial-gradient(1px 1px at 300px 250px, #fff, transparent),
+    radial-gradient(1px 1px at 380px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 450px 150px, #fff, transparent),
+    radial-gradient(1px 1px at 520px 300px, #fff, transparent),
+    radial-gradient(1px 1px at 580px 80px, #fff, transparent),
+    radial-gradient(1px 1px at 50px 350px, #fff, transparent),
+    radial-gradient(1px 1px at 150px 380px, #fff, transparent),
+    radial-gradient(1px 1px at 280px 320px, #fff, transparent),
+    radial-gradient(1px 1px at 400px 380px, #fff, transparent);
   background-repeat: repeat;
   background-size: 600px 400px;
   animation: move-stars-1 200s linear infinite;
@@ -44,9 +53,15 @@
 
 /* Layer 2: Medium, faster stars */
 .stars-2 {
-  background-image: radial-gradient(1.5px 1.5px at 100px 200px, #fff, transparent),
-                    radial-gradient(1.5px 1.5px at 350px 450px, #fff, transparent),
-                    radial-gradient(2px 2px at 550px 100px, #fff, transparent);
+  background-image:
+    radial-gradient(1.5px 1.5px at 50px 150px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 150px 50px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 250px 350px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 350px 150px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 450px 450px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 550px 50px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 650px 300px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 750px 100px, #fff, transparent);
   background-repeat: repeat;
   background-size: 800px 600px;
   animation: move-stars-2 150s linear infinite;
@@ -54,9 +69,13 @@
 
 /* Layer 3: Largest, fastest stars */
 .stars-3 {
-  background-image: radial-gradient(2px 2px at 200px 300px, #fff, transparent),
-                    radial-gradient(2.5px 2.5px at 500px 500px, #fff, transparent),
-                    radial-gradient(2px 2px at 700px 50px, #fff, transparent);
+  background-image:
+    radial-gradient(2px 2px at 100px 100px, #fff, transparent),
+    radial-gradient(2px 2px at 300px 500px, #fff, transparent),
+    radial-gradient(2px 2px at 600px 200px, #fff, transparent),
+    radial-gradient(2px 2px at 800px 600px, #fff, transparent),
+    radial-gradient(2.5px 2.5px at 400px 300px, #fff, transparent),
+    radial-gradient(2.5px 2.5px at 700px 100px, #fff, transparent);
   background-repeat: repeat;
   background-size: 1000px 800px;
   animation: move-stars-3 100s linear infinite;
@@ -72,4 +91,8 @@
 .glow-on-hover:hover {
   box-shadow: 0 0 15px rgba(139, 92, 246, 0.4), 0 0 5px rgba(139, 92, 246, 0.6);
   border-color: rgba(139, 92, 246, 0.4);
+}
+
+.web {
+  overflow: hidden;
 }
