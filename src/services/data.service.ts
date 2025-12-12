@@ -10,7 +10,7 @@ export class DataService {
       id: 'hsbc-fd',
       title: 'HSBC and FD Project',
       tagline: 'Home insurance platform for HSBC & First Direct',
-      status: 'Done',
+      status: 'Live',
       summary:
         'Shared backend & frontend for HSBC and First Direct home insurance flows with dynamic styling per brand.',
       features: [
@@ -24,14 +24,19 @@ export class DataService {
       liveUrl: '#',
       caseStudy: {
         problem: "HSBC & First Direct needed a unified, modern, and dynamically-branded home insurance platform to replace their legacy systems, improving user experience and internal efficiency.",
-        role: ["Lead Frontend Engineer", "System Design & Architecture", "API Integration with backend services", "CI/CD Pipeline setup"],
+        role: [
+          "User authentication",
+          "Constructed the admin pages, both frontend and backend related task",
+          "Built the dynamic multi-page form to generate a quote, including any endpoints required to get a quote.",
+          "Maintained the project after deployment"
+        ],
       },
     },
     {
       id: 'aviva',
       title: 'Aviva Project',
       tagline: 'Aviva business insurance web app',
-      status: 'Done',
+      status: 'Live',
       summary:
         'B2B insurance quoting & policy lifecycle system — quotes, buy, renew, cancellations.',
       features: [
@@ -44,7 +49,12 @@ export class DataService {
       repoUrl: '#',
       caseStudy: {
         problem: "Aviva's existing B2B insurance portal was outdated, slow, and unable to handle complex multi-product quotes efficiently. They required a complete overhaul to streamline the process for brokers and underwriters.",
-        role: ["Full-Stack Developer", "Developed key features for the quoting engine", "Built RESTful APIs", "Contributed to database design"],
+        role: [
+          "Full-Stack Developer",
+          "Developed key features for the quoting engine",
+          "Built RESTful APIs",
+          "Contributed to admin pages"
+        ],
       },
     },
     {
@@ -72,20 +82,20 @@ export class DataService {
       id: 'chess-engine',
       title: 'Chess engine & database',
       tagline: 'Chess engine + 4M game database',
-      status: 'Done',
+      status: 'Live',
       summary:
         'A hybrid chess engine that consults three sub-engines — minimax, historical database, and a neural network — plus a searchable database of ~4 million GM games.',
       features: [
         'Playable engine (play as white or black)',
-        'Move suggestions from three sub-engines with confidence scores',
-        'Database queries by player, ECO code, opening, year',
+        'Move generated from three sub-engines',
+        'Database queries by position, and moves played',
         'API endpoints for engine and database interaction',
       ],
       tech: ['FastAPI', 'Angular', 'PostgreSQL', 'PyTorch', 'Python', 'Tailwind CSS'],
       liveUrl: '#',
       caseStudy: {
-        problem: "Modern chess engines are dominated by neural networks, which are computationally expensive. This project explores a hybrid approach, combining a traditional alpha-beta (minimax) engine, a massive historical game database, and a lightweight neural network to provide strong moves on consumer hardware.",
-        role: ["Project Lead & Developer", "Engine development (Python/PyTorch)", "Database design and querying (PostgreSQL)", "API development (FastAPI)", "Frontend playable interface (Angular)"],
+        problem: "Modern chess engines are dominated by expensive neural networks. This project explores a hybrid approach combining a traditional alpha-beta engine, a game database, and a lightweight neural network for consumer-hardware moves.",
+        role: ["Solo Developer", "Engine development (Python/PyTorch)", "Database design and querying (PostgreSQL)", "API development (FastAPI)", "Frontend playable interface (Angular)"],
       },
     },
     {
@@ -123,12 +133,12 @@ export class DataService {
     { name: 'Node.js', category: 'Backend', logoPath: '/assets/nodejs.svg' },
     { name: 'PostgreSQL', category: 'Backend', logoPath: '/assets/postgresql.svg' },
     { name: 'Python', category: 'Backend', logoPath: '/assets/python.svg' },
-    { name: 'MongoDB', category: 'Backend', logoPath: '/assets/mongo.svg' },
+    { name: 'MongoDB', category: 'Backend', logoPath: '/assets/mongodb.svg' },
     { name: 'FastAPI', category: 'Backend', logoPath: '/assets/fastapi.svg' },
     { name: 'Java', category: 'Backend', logoPath: '/assets/java.svg' },
 
     // Mobile
-    { name: 'React Native', category: 'Mobile', logoPath: '/assets/reactnative.svg' },
+    { name: 'React Native', category: 'Mobile', logoPath: '/assets/react.svg' },
     { name: 'Expo', category: 'Mobile', logoPath: '/assets/expo.svg' },
     { name: 'SQLite', category: 'Mobile', logoPath: '/assets/sqlite.svg' },
 
@@ -139,12 +149,12 @@ export class DataService {
     { name: 'GitHub Actions', category: 'DevOps & Tooling', logoPath: '/assets/github.svg' },
 
     // AI/ML
-    { name: 'PyTorch', category: 'AI/ML', logoPath: '' },
-    { name: 'TensorFlow', category: 'AI/ML', logoPath: '' },
-    { name: 'Pandas', category: 'AI/ML', logoPath: '' },
-    { name: 'Numpy', category: 'AI/ML', logoPath: '' },
-    { name: 'Matplotlib', category: 'AI/ML', logoPath: '' },
-    { name: 'Keras', category: 'AI/ML', logoPath: '' },
+    { name: 'PyTorch', category: 'AI/ML', logoPath: '/assets/pytorch.svg' },
+    { name: 'TensorFlow', category: 'AI/ML', logoPath: '/assets/tensorflow.svg' },
+    { name: 'Pandas', category: 'AI/ML', logoPath: '/assets/pandas.svg' },
+    { name: 'Numpy', category: 'AI/ML', logoPath: '/assets/numpy.svg' },
+    { name: 'Matplotlib', category: 'AI/ML', logoPath: '/assets/matplotlib.svg' },
+    { name: 'Keras', category: 'AI/ML', logoPath: '/assets/keras.svg' },
   ]);
 
   constructor() {}

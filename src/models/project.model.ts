@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   tagline: string;
-  status: 'Done' | 'Ongoing' | 'Freelance';
+  status: 'Done' | 'Ongoing' | 'Freelance' | 'Live';
   summary: string;
   features: string[];
   tech: string[];
