@@ -93,6 +93,13 @@
   border-color: rgba(139, 92, 246, 0.4);
 }
 
-.web {
-  overflow: hidden;
+.modal-scrollbar-hidden {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.modal-scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }

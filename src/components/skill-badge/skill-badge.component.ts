@@ -6,7 +6,9 @@ import {NgOptimizedImage} from '@angular/common';
   selector: 'app-skill-badge',
   templateUrl: './skill-badge.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: []
+  imports: [
+    NgOptimizedImage
+  ]
 })
 export class SkillBadgeComponent {
   skill = input.required<Skill>();

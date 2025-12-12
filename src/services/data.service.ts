@@ -112,31 +112,31 @@ export class DataService {
 
   skills = signal<Skill[]>([
     // Frontend
-    { name: 'Angular', category: 'Frontend', logoPath: ''},
-    { name: 'TypeScript', category: 'Frontend', logoPath: '' },
-    { name: 'React', category: 'Frontend', logoPath: '' },
-    { name: 'RxJS', category: 'Frontend', logoPath: '' },
-    { name: 'Tailwind CSS', category: 'Frontend', logoPath: '' },
+    { name: 'Angular', category: 'Frontend', logoPath: '/assets/angular.svg'},
+    { name: 'TypeScript', category: 'Frontend', logoPath: '/assets/typescript.svg' },
+    { name: 'React', category: 'Frontend', logoPath: '/assets/react.svg' },
+    { name: 'RxJS', category: 'Frontend', logoPath: '/assets/rxjs.svg' },
+    { name: 'Tailwind CSS', category: 'Frontend', logoPath: '/assets/tailwindcss.svg' },
 
     // Backend
-    { name: 'Spring Boot', category: 'Backend', logoPath: '' },
-    { name: 'Node.js', category: 'Backend', logoPath: '' },
-    { name: 'PostgreSQL', category: 'Backend', logoPath: '' },
-    { name: 'Python', category: 'Backend', logoPath: '' },
-    { name: 'MongoDB', category: 'Backend', logoPath: '' },
-    { name: 'FastAPI', category: 'Backend', logoPath: '' },
-    { name: 'Java', category: 'Backend', logoPath: '' },
+    { name: 'Spring Boot', category: 'Backend', logoPath: '/assets/spring.svg' },
+    { name: 'Node.js', category: 'Backend', logoPath: '/assets/nodejs.svg' },
+    { name: 'PostgreSQL', category: 'Backend', logoPath: '/assets/postgresql.svg' },
+    { name: 'Python', category: 'Backend', logoPath: '/assets/python.svg' },
+    { name: 'MongoDB', category: 'Backend', logoPath: '/assets/mongo.svg' },
+    { name: 'FastAPI', category: 'Backend', logoPath: '/assets/fastapi.svg' },
+    { name: 'Java', category: 'Backend', logoPath: '/assets/java.svg' },
 
     // Mobile
-    { name: 'React Native', category: 'Mobile', logoPath: '' },
-    { name: 'Expo', category: 'Mobile', logoPath: '' },
-    { name: 'SQLite', category: 'Mobile', logoPath: '' },
+    { name: 'React Native', category: 'Mobile', logoPath: '/assets/reactnative.svg' },
+    { name: 'Expo', category: 'Mobile', logoPath: '/assets/expo.svg' },
+    { name: 'SQLite', category: 'Mobile', logoPath: '/assets/sqlite.svg' },
 
     // DevOps & Tooling
-    { name: 'Docker', category: 'DevOps & Tooling', logoPath: '' },
-    { name: 'AWS', category: 'DevOps & Tooling', logoPath: '' },
-    { name: 'Google Cloud', category: 'DevOps & Tooling', logoPath: '' },
-    { name: 'GitHub Actions', category: 'DevOps & Tooling', logoPath: '' },
+    { name: 'Docker', category: 'DevOps & Tooling', logoPath: '/assets/docker.svg' },
+    { name: 'AWS', category: 'DevOps & Tooling', logoPath: '/assets/aws.svg' },
+    { name: 'Google Cloud', category: 'DevOps & Tooling', logoPath: '/assets/googlecloud.svg' },
+    { name: 'GitHub Actions', category: 'DevOps & Tooling', logoPath: '/assets/github.svg' },
 
     // AI/ML
     { name: 'PyTorch', category: 'AI/ML', logoPath: '' },
