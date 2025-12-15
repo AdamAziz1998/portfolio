@@ -8,6 +8,9 @@ export interface Project {
   tech: string[];
   repoUrl?: string;
   liveUrl?: string;
+  liveUrlTitle?: string;
+  liveUrl2?: string;
+  liveUrl2Title?: string;
   caseStudy: {
     problem: string;
     role: string[];

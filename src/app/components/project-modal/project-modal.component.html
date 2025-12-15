@@ -42,7 +42,13 @@
 
         <div class="flex flex-wrap gap-4 pt-4">
           @if (project().liveUrl && project().liveUrl !== '#') {
-            <a [href]="project().liveUrl" target="_blank" class="flex-1 text-center bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">View Live Demo</a>
+            <a [href]="project().liveUrl" target="_blank" class="flex-1 text-center bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+              @if (project().liveUrlTitle) {
+                {{project().liveUrlTitle}}
+              } @else {
+                View Live
+              }
+            </a>
           } @else if(project().liveUrl) {
              <a class="flex-1 text-center bg-violet-600/50 text-white font-bold py-3 px-6 rounded-lg cursor-not-allowed opacity-60">Live Demo (N/A)</a>
           }
@@ -50,6 +56,14 @@
             <a [href]="project().repoUrl" target="_blank" class="flex-1 text-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">View Code</a>
           } @else if(project().repoUrl) {
             <a class="flex-1 text-center bg-gray-700/60 text-white font-bold py-3 px-6 rounded-lg cursor-not-allowed opacity-60">View Code (Private)</a>
+          } @else if (project().liveUrl2 && project().liveUrl2 !== '#') {
+            <a [href]="project().repoUrl" target="_blank" class="flex-1 text-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+              @if (project().liveUrl2Title) {
+                {{project().liveUrl2Title}}
+              } @else {
+                View Live
+              }
+            </a>
           }
         </div>
       </div>
